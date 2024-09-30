@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% include 'bootstrap.html' %}
+    <title>Home</title>
+  </head>
+  <body>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
+    <div class="container">
+      <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
+      <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam aliquid aperiam   
+      incidunt doloribus. Placeat voluptates ipsam, iste adipisci nihil aliquid quasi, doloremque neque 
+      quaerat, ex aliquam! Voluptate nesciunt quaerat labore!</p>
+          </div>
+        <div class="d-none d-md-block col-md-6">
+      <img src="/static/people.avif" style="height:320px;border-radius:4px">
+      </div>
+      <h2 class="text-center mt-2 mb-4">Open Positions</h2>
+      <div>
+        {% for job in job %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
+      <div class="text-center">
+        <a href="mailto:svenkatmohit2883@gmail.com?subject=Questions&body=Type your Queries here"><button class="btn btn-primary btn-lg">Contact us</button>          </a>
+        <p class="mt-4">CopyRight Jovian 2023</p>
+      </div>
+    </div>
+    {% include 'foot.html' %}
+
+  </body>
+</html>
