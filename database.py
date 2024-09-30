@@ -41,21 +41,6 @@ def store_app_data(job_id,data):
     }
     conn.execute(query,params)
     conn.commit()
-
-  
-# with engine.connect() as conn:
-#     result = conn.execute(text('select * from jobs'))
-#     # print(type(result)) #cursor
-#     # result_all = result.all()
-#     # print(type(result_all)) #list
-#     # first_result = result_all[0]
-#     # print(type(first_result))# <class 'sqlalchemy.engine.row.Row'>
-#     # first_result_dict = result_all[0]._asdict()
-#     # print(type(first_result_dict))
-#     # print(first_result_dict)
-#     result_dict = []
-#     for row in result.all():
-#         result_dict.append(row._asdict())
     
 #     print(result_dict)
 
